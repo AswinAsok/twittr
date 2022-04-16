@@ -16,7 +16,7 @@ export async function getServerSideProps(context) {
       `https://api.twitter.com/2/tweets?ids=${tweetid}&tweet.fields=public_metrics&expansions=attachments.media_keys&media.fields=public_metrics`,
       {
         headers: {
-          Authorization: "Bearer Token",
+          Authorization: `Bearer ${process.env.TOKEN}`,
         },
       }
     )
