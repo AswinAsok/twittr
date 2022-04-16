@@ -1,3 +1,0 @@
-# twittr
-
-Saturday Hacknight
