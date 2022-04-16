@@ -1,22 +1,43 @@
 import React from "react";
 import axios from "axios";
+import Navbar from "../../components/components/Navbar/Navbar";
+import styles from "./tweetid.module.css";
 
 const tweetid = ({ tweetdata }) => {
   console.log(tweetdata);
   return (
-    <div>
-      <p>Retweet Count: {tweetdata.public_metrics.retweet_count}</p>
-      <p>Reply Count: {tweetdata.public_metrics.reply_count}</p>
+    <>
+      <Navbar />
 
-      <p>Like Count: {tweetdata.public_metrics.like_count}</p>
+      <div className={styles.container}>
+        <div className={styles.tweet}>{tweetdata.text}</div>
+        <div className={styles.count}>
+          <p>
+            Retweet Count <br /> {tweetdata.public_metrics.retweet_count}
+          </p>
+          <p>
+            Reply Count
+            <br />
+            {tweetdata.public_metrics.reply_count}
+          </p>
 
-      <p>
-        Ratio: 
-         {tweetdata.public_metrics.reply_count /
-          (tweetdata.public_metrics.like_count +
-            tweetdata.public_metrics.retweet_count)}
-      </p>
-    </div>
+          <p>
+            Like Count
+            <br /> {tweetdata.public_metrics.like_count}
+          </p>
+        </div>
+
+        <div className={styles.ratio}>
+          <p>
+            Ratio
+            <br />
+            {tweetdata.public_metrics.reply_count /
+              (tweetdata.public_metrics.like_count +
+                tweetdata.public_metrics.retweet_count)}
+          </p>
+        </div>
+      </div>
+    </>
   );
 };
 
