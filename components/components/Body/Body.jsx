@@ -22,15 +22,19 @@ const Body = () => {
         <input
           onChange={(event) => {
             setTweetid(event.target.value);
-            console.log(tweetid);
           }}
           type="text"
           name=""
           id=""
+          placeholder="twitter.com/elonmusk/status/:tweetId"
         />
         <Link href={`/tweet/${tweetid}`}>
           <button className={styles.button}>Start</button>
         </Link>
+        <p className={styles.note}>
+          Click on any tweet and from the url in the browser you can find the
+          tweetId
+        </p>
       </div>
     </div>
   );

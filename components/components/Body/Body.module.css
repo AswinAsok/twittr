@@ -47,6 +47,13 @@
   text-align: center;
 }
 
+.note {
+  text-align: center;
+  margin-top: 3vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
 @media only screen and (min-width: 800px) {
   .form input {
     border: none;

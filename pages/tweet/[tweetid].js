@@ -4,7 +4,6 @@ import Navbar from "../../components/components/Navbar/Navbar";
 import styles from "./tweetid.module.css";
 
 const tweetid = ({ tweetdata }) => {
-  console.log(tweetdata);
   return (
     <>
       <Navbar />
@@ -39,9 +38,9 @@ const tweetid = ({ tweetdata }) => {
 
         <div className={styles.about}>
           <span>Note: </span>
-          If the ratio is greater than 1, it indicates a neagive response
-          towards your tweets, as the number of replies is more than the number
-          of likes and retweets. If its less than one you are good to go.
+          If the ratio is greater than 1, it indicates a negative response
+          towards your tweet, as the number of replies is more than the number
+          of likes and retweets taken together. If its less than one you are good to go.
         </div>
       </div>
     </>
