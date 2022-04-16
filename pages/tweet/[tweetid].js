@@ -3,7 +3,21 @@ import axios from "axios";
 
 const tweetid = ({ tweetdata }) => {
   console.log(tweetdata);
-  return <div>Hi</div>;
+  return (
+    <div>
+      <p>Retweet Count: {tweetdata.public_metrics.retweet_count}</p>
+      <p>Reply Count: {tweetdata.public_metrics.reply_count}</p>
+
+      <p>Like Count: {tweetdata.public_metrics.like_count}</p>
+
+      <p>
+        Ratio: 
+         {tweetdata.public_metrics.reply_count /
+          (tweetdata.public_metrics.like_count +
+            tweetdata.public_metrics.retweet_count)}
+      </p>
+    </div>
+  );
 };
 
 export default tweetid;
@@ -24,7 +38,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      tweetdata: data.data,
+      tweetdata: data.data[0],
     },
   };
 }
