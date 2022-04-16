@@ -24,7 +24,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      tweetdata: data,
+      tweetdata: data.data,
     },
   };
 }
