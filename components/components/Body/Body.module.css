@@ -46,3 +46,12 @@
   margin-top: 1vh;
   text-align: center;
 }
+
+@media only screen and (min-width: 800px) {
+  .form input {
+    border: none;
+    width: 25rem;
+    padding: 0.95rem;
+    border-radius: 5px 0 0 5px;
+  }
+}

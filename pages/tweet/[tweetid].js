@@ -29,12 +29,19 @@ const tweetid = ({ tweetdata }) => {
 
         <div className={styles.ratio}>
           <p>
-            Ratio
+            The Determining Ratio
             <br />
             {tweetdata.public_metrics.reply_count /
               (tweetdata.public_metrics.like_count +
                 tweetdata.public_metrics.retweet_count)}
           </p>
+        </div>
+
+        <div className={styles.about}>
+          <span>Note: </span>
+          If the ratio is greater than 1, it indicates a neagive response
+          towards your tweets, as the number of replies is more than the number
+          of likes and retweets. If its less than one you are good to go.
         </div>
       </div>
     </>

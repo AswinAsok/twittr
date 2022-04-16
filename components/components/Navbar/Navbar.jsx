@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>Twittr.</div>
-      <div className={styles.tagline}>The Ratio Determining</div>
+      <div className={styles.tagline}>The Determining Ratio </div>
     </div>
   );
 };

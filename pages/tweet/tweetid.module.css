@@ -17,9 +17,68 @@
 
 .count {
   display: flex;
+  font-family: "Outfit", sans-serif;
   flex-direction: row;
 }
 
 .count p {
+  font-family: "Outfit", sans-serif;
   margin: 2rem;
+  margin-bottom: 0rem;
+  font-size: 1.01rem;
+}
+
+.ratio {
+  font-size: 1.01rem;
+  font-family: "Outfit", sans-serif;
+  color: #38a7de;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.about {
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+}
+
+.about span {
+  color: #38a7de;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 800px) {
+  .tweet {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  .count {
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    flex-direction: row;
+    font-size: 1.25rem;
+  }
+
+  .count p {
+    font-family: "Outfit", sans-serif;
+    margin: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .ratio {
+    font-family: "Outfit", sans-serif;
+    color: #38a7de;
+    font-weight: 600;
+    font-size: 1.75rem;
+  }
+
+
+.about {
+  margin-top: 3rem;
+  width: 65%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+}
 }
