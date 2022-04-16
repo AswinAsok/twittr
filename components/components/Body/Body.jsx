@@ -33,7 +33,8 @@ const Body = () => {
         </Link>
         <p className={styles.note}>
           Click on any tweet and from the url in the browser you can find the
-          tweetId
+          tweetId. <br />
+          <strong>Enter the TweetId only.</strong>
         </p>
       </div>
     </div>
