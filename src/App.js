@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import Body from "./components/Body/Body";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
   return (
     <div className="App">
-     Lets Go .....
+      <Navbar />
+      <Body />
     </div>
   );
 }
