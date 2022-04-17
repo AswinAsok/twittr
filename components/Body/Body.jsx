@@ -25,9 +25,11 @@ const Body = () => {
         The Ratio which Determies the Future of your Tweets.
       </div>
       <div className={styles.tagline}>
-        On the social media platform Twitter, a ratio, or getting ratioed, is
+        
+        On the social media platform Twitter, <a href="https://www.urbandictionary.com/define.php?term=ratioed">a ratio, or getting ratioed</a>, is
         when replies to a tweet vastly outnumber likes or retweets. This means
         people are objecting to the tweet and considering its content bad.
+        
       </div>
       <div className={styles.form}>
         <div className={styles.formfield}>
