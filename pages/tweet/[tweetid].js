@@ -14,6 +14,7 @@ const tweetid = ({ tweetdata }) => {
       <Navbar />
 
       <div className={styles.container}>
+        <p className={styles.heading}>The Tweet and Ratio.</p>
         <div className={styles.tweet}>{tweetdata.text}</div>
         <div className={styles.count}>
           <p>
@@ -48,6 +49,22 @@ const tweetid = ({ tweetdata }) => {
           of likes and retweets taken together. If its less than one you are
           good to go.
         </div>
+
+        <div className={styles.credits}>
+        Made By{" "}
+        <a href="https://github.com/Govind-S-B" target="_blank">
+          Govind SB
+        </a>{" "}
+        ,{" "}
+        <a href="https://github.com/ashwin271" target="_blank">
+          Ashwin M Murali
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/AswinAsok" target="_blank">
+          Aswin Asok
+        </a>{" "}
+        for Saturday Hack-Night 🚀.
+      </div>
       </div>
     </>
   );

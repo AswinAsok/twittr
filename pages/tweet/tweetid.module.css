@@ -48,6 +48,13 @@
   font-size: 1.5rem;
 }
 
+.heading {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.2rem;
+  color: #38a7de;
+  font-weight: 600;
+}
+
 .about {
   margin-top: 3rem;
   font-family: "Poppins", sans-serif;
@@ -91,4 +98,13 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.05rem;
   }
+}
+
+.credits {
+  margin: 2rem;
+  margin-top: 6rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
 }
