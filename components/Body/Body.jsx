@@ -25,28 +25,32 @@ const Body = () => {
         The Ratio which Determies the Future of your Tweets.
       </div>
       <div className={styles.tagline}>
-        On the social media platform Twitter, a ratio, or getting ratioed, is when replies to a tweet vastly outnumber likes or retweets.
-        This means people are objecting to the tweet and considering its content bad.
+        On the social media platform Twitter, a ratio, or getting ratioed, is
+        when replies to a tweet vastly outnumber likes or retweets. This means
+        people are objecting to the tweet and considering its content bad.
       </div>
       <div className={styles.form}>
-        <input
-          onChange={(event) => {
-            setTweetid(event.target.value);
-          }}
-          type="text"
-          name=""
-          id=""
-          placeholder="twitter.com/elonmusk/status/:tweetId"
-        />
-        <Link href={`/tweet/${tweetid}`}>
-          <button className={styles.button}>Start</button>
-        </Link>
+        <div className={styles.formfield}>
+          <input
+            onChange={(event) => {
+              setTweetid(event.target.value);
+            }}
+            type="text"
+            name=""
+            id=""
+            placeholder="twitter.com/elonmusk/status/:tweetId"
+          />
+          <Link href={`/tweet/${tweetid}`}>
+            <button className={styles.button}>Start</button>
+          </Link>
+        </div>
+
         <p className={styles.note}>
           Click on any tweet and from the url in the browser you can find the
           tweetId. <br />
           <strong>
             Enter the TweetId only <br />
-            (Eg. 1515360606643228686)
+            (Sample TweetId: 1515360606643228686)
           </strong>
         </p>
       </div>

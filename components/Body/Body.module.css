@@ -20,6 +20,10 @@
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -118,5 +122,9 @@
   .credits {
     position: absolute;
     bottom: 0;
+  }
+
+  .tagline{
+    width: 60vw;
   }
 }
