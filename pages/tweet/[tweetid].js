@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Navbar from "../../components/components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import styles from "./tweetid.module.css";
 
 const tweetid = ({ tweetdata }) => {

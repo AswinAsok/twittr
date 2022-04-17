@@ -5,10 +5,31 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #26a7de;
+  font-weight: 600;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(227, 243, 247);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #26a7de;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #26a7de;
 }

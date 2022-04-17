@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/components/Navbar/Navbar";
-import Body from "../components/components/Body/Body";
+import Navbar from "../components/Navbar/Navbar";
+import Body from "../components/Body/Body";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -9,12 +9,17 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Twittr</title>
-        <meta name="description" content="Made by Aswin, Ashwin and Govind for Tinkerhub Saturday Hacknight with passion" />
+        <meta
+          name="description"
+          content="Made by Aswin, Ashwin and Govind for Tinkerhub Saturday Hacknight with passion"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Navbar />
       <Body />
+
+  
     </div>
   );
 }
