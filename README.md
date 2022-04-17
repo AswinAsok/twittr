@@ -1,6 +1,7 @@
 <p align="center">
 <img src="./public/favicon.png" width="100px" />
 <h1 align="center">The Twittr.</h1>
+<p align="center">On the social media platform Twitter, a ratio, or getting ratioed, is when replies to a tweet vastly outnumber likes or retweets. This means people are objecting to the tweet and considering its content bad.</p>
 
 ## Features 🚀
 
