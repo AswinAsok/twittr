@@ -1,14 +1,21 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "./logo.png";
+import github from "../../public/github.png";
 import styles from "./Body.module.css";
-
-// https://api.twitter.com/2/tweets?ids=1511678199616335872&tweet.fields=public_metrics&expansions=attachments.media_keys&media.fields=public_metrics
 
 const Body = () => {
   const [tweetid, setTweetid] = useState(0);
+  const [stars, setStars] = useState(0);
+
+  useEffect(() => {
+    fetch(`https://api.github.com/repos/AswinAsok/twittr`)
+      .then((res) => res.json())
+      .then((data) => {
+        setStars(data.stargazers_count);
+      });
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -37,9 +44,21 @@ const Body = () => {
         <p className={styles.note}>
           Click on any tweet and from the url in the browser you can find the
           tweetId. <br />
-          <strong>Enter the TweetId only.</strong>
+          <strong>
+            Enter the TweetId only <br />
+            (Eg. 1515360606643228686)
+          </strong>
         </p>
       </div>
+
+      <a href="https://github.com/AswinAsok/twittr">
+        <div className={styles.github}>
+          <button className={styles.star}>
+            <span> {stars} Stars </span>
+            <Image src={github} width={50} height={50} />{" "}
+          </button>
+        </div>
+      </a>
 
       <div className={styles.credits}>
         Made By{" "}
