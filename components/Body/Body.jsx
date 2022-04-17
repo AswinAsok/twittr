@@ -25,8 +25,8 @@ const Body = () => {
         The Ratio which Determies the Future of your Tweets.
       </div>
       <div className={styles.tagline}>
-        We help you find the ratio which indicates the users responses to your
-        tweet. Just enter your tweet id and view the magic
+        On the social media platform Twitter, a ratio, or getting ratioed, is when replies to a tweet vastly outnumber likes or retweets.
+        This means people are objecting to the tweet and considering its content bad.
       </div>
       <div className={styles.form}>
         <input
