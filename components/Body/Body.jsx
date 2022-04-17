@@ -41,7 +41,7 @@ const Body = () => {
             placeholder="twitter.com/elonmusk/status/:tweetId"
           />
           <Link href={`/tweet/${tweetid}`}>
-            <button className={styles.button}>Start</button>
+            <button className={styles.button}>Ratio It</button>
           </Link>
         </div>
 
