@@ -36,7 +36,8 @@ const tweetid = ({ tweetdata }) => {
           <p>
             The Determining Ratio
             <br />
-            {tweetdata.public_metrics.reply_count /
+            {(tweetdata.public_metrics.reply_count +
+              tweetdata.public_metrics.quote_count) /
               (tweetdata.public_metrics.like_count +
                 tweetdata.public_metrics.retweet_count)}
           </p>
@@ -51,20 +52,20 @@ const tweetid = ({ tweetdata }) => {
         </div>
 
         <div className={styles.credits}>
-        Made By{" "}
-        <a href="https://github.com/Govind-S-B" target="_blank">
-          Govind SB
-        </a>{" "}
-        ,{" "}
-        <a href="https://github.com/ashwin271" target="_blank">
-          Ashwin M Murali
-        </a>{" "}
-        and{" "}
-        <a href="https://github.com/AswinAsok" target="_blank">
-          Aswin Asok
-        </a>{" "}
-        for Saturday Hack-Night 🚀.
-      </div>
+          Made By{" "}
+          <a href="https://github.com/Govind-S-B" target="_blank">
+            Govind SB
+          </a>{" "}
+          ,{" "}
+          <a href="https://github.com/ashwin271" target="_blank">
+            Ashwin M Murali
+          </a>{" "}
+          and{" "}
+          <a href="https://github.com/AswinAsok" target="_blank">
+            Aswin Asok
+          </a>{" "}
+          for Saturday Hack-Night 🚀.
+        </div>
       </div>
     </>
   );
