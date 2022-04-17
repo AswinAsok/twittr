@@ -2,6 +2,11 @@ import React from "react";
 import axios from "axios";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./tweetid.module.css";
+import repost from "../../public/repost.png";
+import reply from "../../public/reply.png";
+import heart from "../../public/heart.png";
+
+import Image from "next/image";
 
 const tweetid = ({ tweetdata }) => {
   return (
@@ -12,17 +17,17 @@ const tweetid = ({ tweetdata }) => {
         <div className={styles.tweet}>{tweetdata.text}</div>
         <div className={styles.count}>
           <p>
-            Retweet Count <br /> {tweetdata.public_metrics.retweet_count}
+            <Image src={repost} width={35} height={35} /> <br />{" "}
+            {tweetdata.public_metrics.retweet_count}
           </p>
           <p>
-            Reply Count
-            <br />
+            <Image src={reply} width={33} height={33} /> <br />
             {tweetdata.public_metrics.reply_count}
           </p>
 
           <p>
-            Like Count
-            <br /> {tweetdata.public_metrics.like_count}
+            <Image src={heart} width={35} height={35} /> <br />{" "}
+            {tweetdata.public_metrics.like_count}
           </p>
         </div>
 
@@ -40,7 +45,8 @@ const tweetid = ({ tweetdata }) => {
           <span>Note: </span>
           If the ratio is greater than 1, it indicates a negative response
           towards your tweet, as the number of replies is more than the number
-          of likes and retweets taken together. If its less than one you are good to go.
+          of likes and retweets taken together. If its less than one you are
+          good to go.
         </div>
       </div>
     </>
