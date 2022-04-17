@@ -71,7 +71,7 @@ const Body = () => {
         </a>{" "}
         ,{" "}
         <a href="https://github.com/ashwin271" target="_blank">
-          Ashwin M Murali
+          Ashwin A Murali
         </a>{" "}
         and{" "}
         <a href="https://github.com/AswinAsok" target="_blank">
